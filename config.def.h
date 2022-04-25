@@ -12,8 +12,8 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;     /* 0 means no bar */
 static const int topbar             = 1;     /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
-static const char dmenufont[]       = "monospace:size=10";
+static const char *fonts[]          = { "Anonymice Nerd Font Mono:size=12" };
+static const char dmenufont[]       = "Anonymice Nerd Font Mono:size=12";
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#bbbbbb";
@@ -97,9 +97,9 @@ static Key keys[] = {
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
   { MODKEY,                       XK_F5,     xrdb,           {.v = NULL } },
-  { MODKEY,                       XK_F1,     spawn,          SHCMD("laptop_1s") },
-  { MODKEY,                       XK_F2,     spawn,          SHCMD("home_1s") },
-  { MODKEY,                       XK_F3,     spawn,          SHCMD("home_2s") },
+  { MODKEY,                       XK_F1,     spawn,          SHCMD("laptop_1s.sh") },
+  { MODKEY,                       XK_F2,     spawn,          SHCMD("home_1s.sh") },
+  { MODKEY,                       XK_F3,     spawn,          SHCMD("home_2s.sh") },
   { MODKEY,                       XK_F4,     spawn,          SHCMD("random_wallpeper.sh") },
   { 0,				                    XK_Print,  spawn,		       SHCMD("flameshot gui") },
 	{ 0,                     XF86XK_AudioMute, spawn,          SHCMD("pactl set-sink-mute 0 toggle") },
